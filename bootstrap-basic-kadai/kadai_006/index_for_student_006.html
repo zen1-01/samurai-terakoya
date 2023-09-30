@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- ************************************************ bootstrap.min.cssの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ************************************************ carousel.cssの読み込み -->
+    <link href="carousel.css" rel="stylesheet">
+    <!-- ************************************************ bootstrap.bundle.min.jsの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <!-- ************************************************ カールセル開始 -->
+      <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"> -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/top_1.jpg" alt="サンプル画像1">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/top_2.jpg" alt="サンプル画像2">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/top_3.jpg" alt="サンプル画像3">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+        <!-- 4章　button コメントアウト
+      <div class="container">
+
+        <style>
+          .button-test {
+          /* パディング（余白）上下方向10px 左右方向30px */
+          padding: 10px 30px;
+          /* ボタンの幅　300px */
+          width: 300px;
+          /* 背景色　青 */
+          background-color: blue;
+          /* フォント色　白 */
+          color: white;
+          /* テキスト中央揃え */
+          text-align: center;
+          /* フォントを太く */
+          font-weight: bold;
+          /* ボタンの角を丸める */
+          border-radius: 5px;
+          margin: 30px;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 30%)
+          }
+        </style>
+
+        <button class="btn btn-secondary btn-lg shadow">ここを押す</button>
+        <div class="button-test">ここを押す</div>
+        <a href="" class="btn btn-info btn-sm shadow-lg">ここを押す</a> -->
+
+        <!-- ボタン4章課題　10種類作成
+        <button type="button" class="btn btn-primary">ここを押す</button>
+        <button type="button" class="btn btn-secondary btn-lg">ここを押す</button>
+        <button type="button" class="btn btn-success btn-sm">ここを押す</button>
+        <button type="button" class="btn btn-outline-danger shadow-lg">ここを押す</button>
+        <button type="button" class="btn btn-warning">ここを押す</button>
+        <button type="button" class="btn btn-outline-info btn-lg">ここを押す</button>
+        <button type="button" class="btn btn-light btn-sm shadow">ここを押す</button>
+        <button type="button" class="btn btn-dark shadow-none">ここを押す</button>
+        <button type="button" class="btn btn-outline-warning">ここを押す</button>
+        <button type="button" class="btn btn-link">ここを押す</button> -->
+
+
+        <!-- Bootstrapを利用してボタンを装飾するときは、必ずbtnクラスを指定しなければなりません。button,a,
+        定義済みのボタンスタイルを利用したサンプルコード(html)
+        
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+        定義済みのボタンスタイル（枠のみ）btn-outline-
+        
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      
+        ボタンのサイズを変える
+        btn-lg(lg=large):デフォルトより大きい
+        btn-sm(sm=small):デフォルトより小さい
+
+        ボタンに影をつける
+        shadow-sm:範囲が狭い
+        shadow:範囲が中くらい
+        shadow-lg:範囲が広い
+        shadow-none:影がつかないようにする-->
+
+      <!-- ************************************************ カールセル終了 -->
+      
+
+      <!-- <div class="container marketing"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center"> <!-- alignはいらない？ -->
+            <img src="img/cake.jpg" class="rounded-circle" alt="サンプル画像2">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+              vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+              magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4 text-center"> 
+            <img src="img/cake.jpg" class="rounded-circle" alt="サンプル画像2">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+              vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+              magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4 text-center"> 
+            <img src="img/cake.jpg" class="rounded-circle" alt="サンプル画像2">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+              vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+              magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+        <!-- 006課題　ここから -->
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/sushi.jpg" class="card-img-top" alt="寿司画像">
+              <div class="card-body">
+                <h2 class="fs-5">First featurette heading.</h2>
+                <p class="fs-6">It'll blow your mind.</p>
+                <p>
+                  Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                  euismod
+                  semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                  commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/sushi.jpg" class="card-img-top" alt="寿司画像">
+              <div class="card-body">
+                <h2 class="fs-5">First featurette heading.</h2>
+                <p class="fs-6">It'll blow your mind.</p>
+                <p>
+                  Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                  euismod
+                  semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                  commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/sushi.jpg" class="card-img-top" alt="寿司画像">
+              <div class="card-body">
+                <h2 class="fs-5">First featurette heading.</h2>
+                <p class="fs-6">It'll blow your mind.</p>
+                <p>
+                  Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                  euismod
+                  semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                  commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/sushi.jpg" class="card-img-top" alt="寿司画像">
+              <div class="card-body">
+                <h2 class="fs-5">First featurette heading.</h2>
+                <p class="fs-6">It'll blow your mind.</p>
+                <p>
+                  Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                  euismod
+                  semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                  commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 006課題　ここまで -->
+
+        <hr class="featurette-divider">
+
+
+        <footer class="container">
+          <!-- <p class="float-end"><a href="#">Back to top</a></p> -->
+          <p class=""><a href="#">Back to top</a></p>
+        </footer>
+      </div>
+    </main>
+  </body>
+
+</html>
